@@ -30,9 +30,6 @@ void setup() {
 
 void loop() {
   Serial.println(encoderValue);
-//  int brightnessValue = map(encoderValue, 0, 100, 0, 255);
-  analogWrite(fadePin,255);
-  
-
-
+  analogWrite(fadePin,encoderValue);
+ 
 }
